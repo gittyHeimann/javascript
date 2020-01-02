@@ -1,0 +1,23 @@
+body{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+li{
+    direction: rtl;
+}
+
+div{
+    margin: 2%;
+}
+
+.completedTask{
+    color: #C3BCBC;
+    text-decoration-line: line-through;
+}
+
+.activeTask{
+    color:#000000;
+    font-size: medium;    
+}

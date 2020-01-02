@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My first project JS</title>
+        <link href="css.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="javascript.js"></script>            
+        <h1>todos</h1>
+        <div>
+            <label id="changeStatus" onclick="changeStatus()">^</label>
+            <input type="text" placeholder="What needs to be done?" onkeypress="writeTask(event,this.value)" id="newTask">
+        </div>
+        <div id="tasksContainer">
+        </div>
+        <footer id="footer" ng-show="checkLength()">
+            <span id="leftItems"></span>
+            <input type="button" value="all" onclick="showAllTasks()"/>
+            <input type="button" value="active" onclick="showActiveTasks()"/>
+            <input type="button" value="completed" onclick="showCompletedTasks()"/>
+            <input type="button" name="clear" onclick="clearCompleted()" value="clear completed" id="clearCompleted">
+        </footer>
+    </body>
+</html>
