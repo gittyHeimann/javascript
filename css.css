@@ -13,11 +13,16 @@ div{
 }
 
 .completedTask{
-    color: #C3BCBC;
+    color: plum;
     text-decoration-line: line-through;
 }
 
 .activeTask{
-    color:#000000;
+    color: purple;
     font-size: medium;    
+}
+input{
+    border-radius: 5px;
+    border: 1px solid palevioletred;
+    background-color: rgba(216, 112, 147, 0.2);
 }

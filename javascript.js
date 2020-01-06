@@ -240,9 +240,10 @@ function deleteTask(){
 // clear list and dom from completed tasks
 function clearCompleted(){
     if(list){
-        removeTaskFromContainer(list[i].id);
+       
         for(let i = 0 ; i < list.length; i++){
-            if(list[i].active === true){
+            if(list[i].active === true){ 
+                removeTaskFromContainer(list[i].id);
                 list.splice(i,1);
                 i--;
             }
